@@ -14,12 +14,22 @@ public class MainController {
 	// 메소드 - gs
 
 	// 메소드 일반
+
+	// 메인
+	@RequestMapping(value = "/main", method = { RequestMethod.GET, RequestMethod.POST })
+	public String main() {
+		System.out.println("MainController.main()");
+
+		return "main";
+	}
+
+	// 테스트용
 	@RequestMapping(value = "/test", method = { RequestMethod.GET, RequestMethod.POST })
 	public String test() {
 		System.out.println("MainController>test()");
-		
-		//기본 뷰 리졸버 하기 전 
-		//return "/WEB-INF/views/tes.jsp";
+
+		// 기본 뷰 리졸버 하기 전
+		// return "/WEB-INF/views/tes.jsp";
 		return "test";
 	}
 
