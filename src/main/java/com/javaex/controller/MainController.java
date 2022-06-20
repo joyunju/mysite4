@@ -20,7 +20,7 @@ public class MainController {
 	public String main() {
 		System.out.println("MainController.main()");
 
-		return "main";
+		return "main/index";
 	}
 
 	// 테스트용
