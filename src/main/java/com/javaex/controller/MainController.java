@@ -18,7 +18,7 @@ public class MainController {
 	// 메인
 	@RequestMapping(value = "/main", method = { RequestMethod.GET, RequestMethod.POST })
 	public String main() {
-		System.out.println("MainController.main()");
+		System.out.println("MainController > main()");
 
 		return "main/index";
 	}
