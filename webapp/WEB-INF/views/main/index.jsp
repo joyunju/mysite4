@@ -84,7 +84,7 @@
 		<!-- //container -->
 
 
-		<div id="footer">Copyright ⓒ 2022 조윤주. All right reserved</div>
+		<div id="footer">Copyright ⓒ 2022 zoo. All right reserved</div>
 		<!-- //footer -->
 
 	</div>
