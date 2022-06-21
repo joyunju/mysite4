@@ -15,12 +15,24 @@ public class UserController {
 
 	// 메소드 일반
 
-	// 
+	// 회원가입폼: joinForm
 	@RequestMapping(value = "/user/joinForm", method = { RequestMethod.GET, RequestMethod.POST })
 	public String joinForm() {
 		System.out.println("UserController > joinForm()");
 
+		// 기본 뷰 리졸버 하기 전
+		// return "/WEB-INF/views/user/joinForm.jsp";
 		return "user/joinForm";
+	}
+
+	// 회원가입: join
+	@RequestMapping(value = "/user/join", method = { RequestMethod.GET, RequestMethod.POST })
+	public String join() {
+		System.out.println("UserController > join()");
+
+		// 기본 뷰 리졸버 하기 전
+		// return "/WEB-INF/views/user/joinForm.jsp";
+		return "user/join";
 	}
 
 }
