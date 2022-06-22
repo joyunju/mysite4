@@ -2,6 +2,7 @@ package com.javaex.service;
 
 import org.springframework.stereotype.Service;
 
+import com.javaex.dao.UserDao;
 import com.javaex.vo.UserVo;
 
 @Service
@@ -18,7 +19,11 @@ public class UserService {
 		System.out.println("UserService > join()");
 
 		// 회원가입 비즈니스 로직
-		System.out.println(userVo);
+		// Dao를 통해서 데이터 저장
+		UserDao userDao = new UserDao();
+		userDao.userInsert(userVo);
+
+		// System.out.println(userVo);
 	}
 
 }
