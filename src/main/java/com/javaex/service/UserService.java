@@ -1,7 +1,10 @@
 package com.javaex.service;
 
+import org.springframework.stereotype.Service;
+
 import com.javaex.vo.UserVo;
 
+@Service
 public class UserService {
 
 	// 필드
