@@ -39,6 +39,13 @@
 			<version>19.3.0.0</version>
 		</dependency>
 
+		<!-- spring jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
 		<!-- jstl -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
