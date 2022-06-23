@@ -46,7 +46,7 @@ public class UserController {
 
 		// 기본 뷰 리졸버 하기 전
 		// return "/WEB-INF/views/user/join.jsp";
-		return "";
+		return "user/joinOk";
 	}
 
 }
