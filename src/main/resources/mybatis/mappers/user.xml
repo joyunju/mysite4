@@ -6,8 +6,8 @@
 	<!-- insert -->
 	<insert id="insert" parameterType="com.javaex.vo.UserVo">
 		<![CDATA[
-			insert into person
-			values (seq_person_id.nextval, #{name}, #{hp}, #{company})
+			insert into users
+			values (seq_users_no.nextval, #{id}, #{password}, #{name}, #{gender})
 		]]>
 
 	</insert>
