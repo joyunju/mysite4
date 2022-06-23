@@ -38,10 +38,11 @@ public class UserController {
 	public String join(@ModelAttribute UserVo userVo) {
 		System.out.println("UserController > join()");
 
-		System.out.println(userVo);
+		//System.out.println(userVo);
 
 		// UserService userService = new UserService();
-		userService.join(userVo);
+		int count = userService.join(userVo);
+		System.out.println("UserController: " + count);
 
 		// 기본 뷰 리졸버 하기 전
 		// return "/WEB-INF/views/user/join.jsp";

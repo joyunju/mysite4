@@ -18,12 +18,15 @@ public class UserDao {
 	// 메소드 - gs
 
 	// 메소드 일반
-	public void userInsert(UserVo userVo) {
+	public int userInsert(UserVo userVo) {
 		System.out.println("UserDao > userInsert()");
 
-		sqlSession.insert("user.insert", userVo);
+		int count = -1;
+		count = sqlSession.insert("user.insert", userVo);
 
-		System.out.println(userVo);
+		return count;
+
+		// System.out.println(userVo);
 	}
 
 }
