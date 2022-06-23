@@ -57,7 +57,7 @@
 						<p class="text-xlarge">
 							<span class="bold">
 								안녕하세요!!<br>
-								zoo의 MySite에 오신 것을 환영합니다.<br>
+								zzoo의 MySite에 오신 것을 환영합니다.<br>
 								<br> 이 사이트는 웹 프로그램밍 실습과제 예제 사이트입니다.<br>
 							</span> 
 							<br> 사이트 소개, 회원가입, 방명록, 게시판으로 구성되어 있으며<br>
@@ -84,7 +84,7 @@
 		<!-- //container -->
 
 
-		<div id="footer">Copyright ⓒ 2022 zoo. All right reserved</div>
+		<div id="footer">Copyright ⓒ 2022 zzoo. All right reserved</div>
 		<!-- //footer -->
 
 	</div>

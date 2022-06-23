@@ -130,7 +130,7 @@
 		<!-- //container  -->
 		
 		<div id="footer">
-			Copyright ⓒ 2022 zoo. All right reserved
+			Copyright ⓒ 2022 zzoo. All right reserved
 		</div>
 		<!-- //footer -->
 
