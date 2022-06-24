@@ -23,7 +23,9 @@ public class UserController {
 
 	// 메소드 일반
 	
-	// 로그인
+	// : login 
+	
+	// 로그인 : loginForm
 	@RequestMapping(value = "/user/loginForm", method = { RequestMethod.GET, RequestMethod.POST })
 	public String loginForm() {
 		System.out.println("UserController > loginForm()");
