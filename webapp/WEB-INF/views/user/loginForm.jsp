@@ -71,6 +71,7 @@
 				<div id="user">
 					<div id="loginForm">
 						<form action="/mysite4/user/login" method="get">
+						<!-- method="post" -->
 
 							<!-- 아이디 -->
 							<div class="form-group">
