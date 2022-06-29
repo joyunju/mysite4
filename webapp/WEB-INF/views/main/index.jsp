@@ -95,8 +95,8 @@
 		</div>
 		<!-- container -->
 
-
-		<div id="footer">Copyright ⓒ 2022 zzoo. All right reserved</div>
+		<!-- footer -->
+		<c:import url="/WEB-INF/views/include/footer.jsp"></c:import>
 		<!-- footer -->
 
 	</div>
