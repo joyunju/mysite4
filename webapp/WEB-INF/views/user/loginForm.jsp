@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -86,6 +86,9 @@
 								<input type="text" id="input-pass" name="password" value="" placeholder="비밀번호를 입력하세요">
 							</div>
 							
+							<c:if test="${param.result == 'fail' }">
+								<p>로그인에 실패했습니다. 다시 입력하세요</p>
+							</c:if>
 
 
 							<!-- 버튼영역 -->
