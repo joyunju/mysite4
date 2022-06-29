@@ -1,3 +1,11 @@
+>> 06-20-Mon
+
+로그아웃
+회원정보수정폼,
+수
+
+
+--------------
 >> 06-21-Tue
 # header.jsp / footer.jsp : inclue
 : 다른 jsp 파일에 공통 부분인 헤더와 푸터아래와 같이 변경
@@ -29,6 +37,14 @@
 public String login(@ModelAttribute UserVo userVo, HttpSession session) {
 	// 코드 작성
 }
+
+-------------
+>> 과제
+: 06.jsp_servlet_board_model2 ppt : 전체 구성도 보기
+(sql : board table 생성)
+ㄴ 방명록(세션X) 만들기
+ㄴ 게시판(세션O) 만들기
+ㄴ 그림 그리기
 
 
 		
