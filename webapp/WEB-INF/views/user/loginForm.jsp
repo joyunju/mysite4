@@ -12,25 +12,22 @@
 </head>
 <body>
 	<div id="wrap">
-
+		<!--  
 		<div id="header" class="clearfix">
 			<h1>
 				<a href="">MySite</a>
 			</h1>
-
-			<!-- 
 			<ul>
 				<li>zzoo 님 안녕하세요^^</li>
 				<li><a href="" class="btn_s">로그아웃</a></li>
 				<li><a href="" class="btn_s">회원정보수정</a></li>
 			</ul>
-			-->
 			<ul>
 				<li><a href="" class="btn_s">로그인</a></li>
 				<li><a href="" class="btn_s">회원가입</a></li>
 			</ul>
-
 		</div>
+		-->
 		<!-- header + nav -->
 		<c:import url="/WEB-INF/views/include/header.jsp"></c:import>
 		
