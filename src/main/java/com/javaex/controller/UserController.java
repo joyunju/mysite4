@@ -12,7 +12,7 @@ import com.javaex.service.UserService;
 import com.javaex.vo.UserVo;
 
 @Controller
-//@RequestMapping(value="/user")
+@RequestMapping(value="/user")
 public class UserController {
 
 	// 필드
@@ -26,7 +26,7 @@ public class UserController {
 	// 메소드 일반
 	
 	// 로그인 : login 
-	@RequestMapping(value = "/user/login", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "/login", method = { RequestMethod.GET, RequestMethod.POST })
 	public String login(@ModelAttribute UserVo userVo, HttpSession session) {
 		System.out.println("UserController > login()");
 		
@@ -53,7 +53,7 @@ public class UserController {
 	}
 	
 	// 로그인 : loginForm
-	@RequestMapping(value = "/user/loginForm", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "/loginForm", method = { RequestMethod.GET, RequestMethod.POST })
 	public String loginForm() {
 		System.out.println("UserController > loginForm()");
 		
@@ -62,7 +62,7 @@ public class UserController {
 	
 
 	// 회원가입폼: joinForm
-	@RequestMapping(value = "/user/joinForm", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "/joinForm", method = { RequestMethod.GET, RequestMethod.POST })
 	public String joinForm() {
 		System.out.println("UserController > joinForm()");
 
@@ -72,7 +72,7 @@ public class UserController {
 	}
 
 	// 회원가입: join
-	@RequestMapping(value = "/user/join", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "/join", method = { RequestMethod.GET, RequestMethod.POST })
 	public String join(@ModelAttribute UserVo userVo) {
 		System.out.println("UserController > join()");
 
@@ -83,7 +83,7 @@ public class UserController {
 		System.out.println("UserController: " + count);
 
 		// 기본 뷰 리졸버 하기 전
-		// return "/WEB-INF/views/user/join.jsp";
+		// return "/WEB-INF/views/user/joinOk.jsp";
 		return "user/joinOk";
 	}
 
