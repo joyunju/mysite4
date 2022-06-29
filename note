@@ -44,7 +44,7 @@ public String login(@ModelAttribute UserVo userVo, HttpSession session) {
 (sql : board table 생성)
 ㄴ 방명록(세션X) 만들기
 ㄴ 게시판(세션O) 만들기
-ㄴ 그림 그리기
+ㄴ 그림 그리기(시퀀스 다이어그램)
 
 
 		
