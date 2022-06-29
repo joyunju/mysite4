@@ -14,7 +14,7 @@
 <body>
 	<div id="wrap">
 
-		<div id="header" class="clearfix">
+		<%-- <div id="header" class="clearfix">
 			<h1>
 				<a href="">MySite</a>
 			</h1>
@@ -49,8 +49,12 @@
 				<li><a href="">방명록</a></li>
 			</ul>
 		</div>
-		<!-- //nav -->
-
+		<!-- //nav --> --%>
+		
+		<!-- header + nav -->
+		<c:import url="/WEB-INF/views/include/header.jsp"></c:import>
+		<!-- header + nav -->
+		
 
 		<div id="container" class="clearfix">
 			<!-- aside 없음 -->
