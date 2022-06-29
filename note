@@ -1,0 +1,34 @@
+>> 06-21-Tue
+# header.jsp / footer.jsp : inclue
+: 다른 jsp 파일에 공통 부분인 헤더와 푸터아래와 같이 변경
+
+<!-- header + nav -->
+<c:import url="/WEB-INF/views/include/header.jsp"></c:import>
+<!-- header + nav -->
+
+<!-- footer -->
+<c:import url="/WEB-INF/views/include/footer.jsp"></c:import>
+<!-- footer -->
+
+#Controller.java
+: 공통으로 작성되는 주소묶기
+(매핑주소 공통으로 사용하기)
+ㄴ @RequestMapping(value="/user")
+
+#path 표현식
+: ${pageContext.request.contextPath}
+ㄴ 처음부터 사용해야함
+ㄴ el(jsp 파일에서만 사용해야함)
+ㄴ java 파일에서는 사용 X!!!
+
+# session
+: session은 웨에서 사용하는 특수한 기술
+ㄴ Controller에서 비즈니스 로직을 구현
+ㄴ 원래 비즈니스 로직은 service 에서 구현 
+ㄴ ex)
+public String login(@ModelAttribute UserVo userVo, HttpSession session) {
+	// 코드 작성
+}
+
+
+		
