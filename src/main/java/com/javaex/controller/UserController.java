@@ -10,13 +10,13 @@ import com.javaex.service.UserService;
 import com.javaex.vo.UserVo;
 
 @Controller
+//@RequestMapping(value="/user")
 public class UserController {
 
 	// 필드
 	@Autowired
 	// UserService userService = new UserService();
 	UserService userService;
-
 	// 생성자
 
 	// 메소드 - gs
@@ -25,10 +25,29 @@ public class UserController {
 	
 	// 로그인 : login 
 	@RequestMapping(value = "/user/login", method = { RequestMethod.GET, RequestMethod.POST })
-	public String login() {
+	public String login(@ModelAttribute UserVo userVo) {
 		System.out.println("UserController > login()");
 		
-		return "user/login";
+		UserVo authUser = userService.login(userVo);
+		
+		//System.out.println(userVo);
+		
+		/* 세션에 저장 */
+		/*
+		//session.setAttribute("authUser", authUser);
+		if(authUser != null) { //로그인성공
+			System.out.println("로그인 성공");
+			session.setAttribute("authUser", authUser);
+			return "redirect:/main";
+			
+		}else {  //로그인실패
+			System.out.println("로그인 실패");
+			return "redirect:/user/loginForm?result=fail";
+		}
+		*/
+		return "";
+		
+
 	}
 	
 	// 로그인 : loginForm
