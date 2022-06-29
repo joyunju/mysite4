@@ -26,6 +26,7 @@ public class UserService {
 		//System.out.println(userVo);
 		
 		UserVo authUser = userDao.getUser(userVo);
+		//System.out.println("UserService : " + authUser);
 		
 		return authUser;
 		//return null;
