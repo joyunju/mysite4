@@ -3,7 +3,7 @@
 
 <div id="header" class="clearfix">
 	<h1>
-		<a href="/mysite4/main">MySite</a>
+		<a href="${pageContext.request.contextPath}/main">MySite</a>
 	</h1>
 
 	<c:choose>
@@ -18,8 +18,8 @@
 		<c:otherwise>
 			<!-- 로그인 실패, 전 -->
 			<ul>
-				<li><a href="/mysite4/user/loginForm" class="btn_s">로그인</a></li>
-				<li><a href="/mysite4/user/joinForm" class="btn_s">회원가입</a></li>
+				<li><a href="${pageContext.request.contextPath}/user/loginForm" class="btn_s">로그인</a></li>
+				<li><a href="${pageContext.request.contextPath}/user/joinForm" class="btn_s">회원가입</a></li>
 			</ul>
 		</c:otherwise>
 	</c:choose>
