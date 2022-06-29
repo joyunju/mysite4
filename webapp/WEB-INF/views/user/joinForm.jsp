@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
 <!DOCTYPE html>
@@ -14,26 +14,26 @@
 
 <body>
 	<div id="wrap">
-
+		<!-- 
 		<div id="header" class="clearfix">
 			<h1>
 				<a href="">MySite</a>
 			</h1>
 
-			<!-- 
+			
 			<ul>
 				<li>zzoo님 안녕하세요^^</li>
 				<li><a href="" class="btn_s">로그아웃</a></li>
 				<li><a href="" class="btn_s">회원정보수정</a></li>
 			</ul>
-			-->	
+				
 			<ul>
 				<li><a href="" class="btn_s">로그인</a></li>
 				<li><a href="" class="btn_s">회원가입</a></li>
 			</ul>
 			
 		</div>
-		<!-- //header -->
+		//header
 
 		<div id="nav">
 			<ul class="clearfix">
@@ -43,7 +43,11 @@
 				<li><a href="">방명록</a></li>
 			</ul>
 		</div>
-		<!-- //nav -->
+		//nav 
+		-->
+		<!-- header + nav -->
+		<c:import url="/WEB-INF/views/include/header.jsp"></c:import>
+		<!-- header + nav -->
 
 		<div id="container" class="clearfix">
 			<div id="aside">
@@ -129,10 +133,9 @@
 		</div>
 		<!-- //container  -->
 		
-		<div id="footer">
-			Copyright ⓒ 2022 zzoo. All right reserved
-		</div>
-		<!-- //footer -->
+		<!-- footer -->
+		<c:import url="/WEB-INF/views/include/footer.jsp"></c:import>
+		<!-- footer -->
 
 	</div>
 	<!-- //wrap -->
