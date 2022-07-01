@@ -16,7 +16,7 @@ public class BoardDao {
 
 	
 	public List<BoardVo> selectList3(String keyword) {
-		System.out.println("BoardDao>selectList3()");
+		System.out.println("BoardDao > selectList3()");
 		
 		List<BoardVo> boardList = sqlSession.selectList("board.selectList3", keyword);
 		
@@ -27,7 +27,7 @@ public class BoardDao {
 	
 	// 글전체 가져오기(리스트만 출력할때)
 	public List<BoardVo> selectList() {
-		System.out.println("BoardDao>selectList()");
+		System.out.println("BoardDao > selectList()");
 
 		List<BoardVo> boardList = sqlSession.selectList("board.selectList");
 		
@@ -36,7 +36,7 @@ public class BoardDao {
 
 	
 	public List<BoardVo> selectList2(String keyword){
-		System.out.println("BoardDao>selectList2()");
+		System.out.println("BoardDao > selectList2()");
 		System.out.println(keyword);
 		
 		List<BoardVo> boardList = sqlSession.selectList("board.selectList2", keyword);
