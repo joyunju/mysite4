@@ -16,7 +16,7 @@ public class BoardService {
 
 	
 	public List<BoardVo> getBoardList3(String keyword) {
-		System.out.println("BoardService>getBoardList3()");
+		System.out.println("BoardService > getBoardList3()");
 
 		List<BoardVo> boardList = boardDao.selectList3(keyword);	
 		
@@ -27,16 +27,16 @@ public class BoardService {
 	
 	// 리스트(리스트만 출력할때)
 	public List<BoardVo> getBoardList() {
-		System.out.println("BoardService>getBoardList()");
+		System.out.println("BoardService > getBoardList()");
 
 		List<BoardVo> boardList = boardDao.selectList();	
 		
 		return boardList;
 	}
-
+	
 	
 	public List<BoardVo> getBoardList2(String keyword){
-		System.out.println("BoardService>getBoardList2()");
+		System.out.println("BoardService > getBoardList2()");
 		
 		List<BoardVo> boardList = boardDao.selectList2(keyword);
 		
