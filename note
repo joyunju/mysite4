@@ -47,6 +47,14 @@ public String login(@ModelAttribute UserVo userVo, HttpSession session) {
 ㄴ 게시판(세션O) 만들기
 ㄴ 그림 그리기(시퀀스 다이어그램)
 
+** 글 읽기 --> 글1개 가져오기 + 조회수 올리기 
+** 컨트롤러 
+ㄴ 사용자의 데이터를 가져오기
+ㄴ jsp 데이터를 잘 전달하기 
+** Dao
+ㄴ 데이터베이스 처리(등록 수정 삭제 조회)
+
+
 --------------
 
 
