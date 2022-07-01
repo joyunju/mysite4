@@ -23,7 +23,7 @@ public class BoardContoller {
 	@RequestMapping(value = "/list3", method = { RequestMethod.GET, RequestMethod.POST })
 	public String list3(Model model, 
 						@RequestParam(value="keyword", required=false, defaultValue="") String keyword) {
-		System.out.println("BoardContoller>list3()");
+		System.out.println("BoardContoller > list3()");
 
 		List<BoardVo> boardList = boardService.getBoardList3(keyword);	
 		model.addAttribute("boardList", boardList);
@@ -33,9 +33,10 @@ public class BoardContoller {
 	
 	
 	// 리스트(리스트만 출력할때)
+	// http://localhost:8088/mysite/board/list
 	@RequestMapping(value = "/list", method = { RequestMethod.GET, RequestMethod.POST })
 	public String list(Model model) {
-		System.out.println("BoardContoller>list()");
+		System.out.println("BoardContoller > list()");
 
 		List<BoardVo> boardList = boardService.getBoardList();
 		
@@ -47,7 +48,7 @@ public class BoardContoller {
 	
 	@RequestMapping(value = "/search", method = { RequestMethod.GET, RequestMethod.POST })
 	public String search(@RequestParam("keyword") String keyword, Model model  ) {
-		System.out.println("BoardContoller>search()");
+		System.out.println("BoardContoller > search()");
 		
 		List<BoardVo> boardList = boardService.getBoardList2(keyword);
 		model.addAttribute("boardList", boardList);
