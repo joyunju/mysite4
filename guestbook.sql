@@ -48,7 +48,7 @@ commit;
 -- 롤백
 rollback;
 
--- delete
+-- delete : 삭제
 delete from guestbook
 where no= 1 
 and password= '1234';
@@ -66,5 +66,21 @@ from guestbook
 order by no desc;
 
 -- 확인
-select * from guestbook;
+SELECT
+    *
+FROM
+    guestbook;
 
+--password 가져오기
+SELECT
+    password
+FROM
+    guestbook
+WHERE
+    no = 1;
+
+--패스워드 ,no 삭제
+DELETE FROM guestbook
+WHERE
+        no = 2
+    AND password = 'qkqh';
