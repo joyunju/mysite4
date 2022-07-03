@@ -34,7 +34,7 @@ public class BoardService {
 		return boardList;
 	}
 	
-	
+	// value = "/search"
 	public List<BoardVo> getBoardList2(String keyword){
 		System.out.println("BoardService > getBoardList2()");
 		

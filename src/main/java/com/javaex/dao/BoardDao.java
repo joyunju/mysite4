@@ -34,7 +34,7 @@ public class BoardDao {
 		return boardList;
 	}
 
-	
+	// value = "/search"
 	public List<BoardVo> selectList2(String keyword){
 		System.out.println("BoardDao > selectList2()");
 		System.out.println(keyword);
