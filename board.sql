@@ -118,7 +118,7 @@ select *
 from board
 where title like '%제목%';
 
--- like 문까지
+-- like 문까지 select
 select  b.no,
         b.title,
         b.content,
