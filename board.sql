@@ -39,6 +39,8 @@ order by no desc;
 insert into board
 values (seq_board_no.nextval, '제목fdf2', '내용fdfd2', 0, sysdate, 3);
 
+insert into board
+values (seq_board_no.nextval, '2번째 제목입니다.', '2번째 내용입니다.', 0, sysdate, 2);
 
 -- delete : t삭제
 delete from board
@@ -110,7 +112,10 @@ select  b.no,
 from board b, users u
 where b.user_no = u.no;
 
-
+-- 조건 : 제목 이라는 단어를 타이틀에서 포함하고 있는지
+select *
+from board
+where title like '%제목%';
 
 
 
