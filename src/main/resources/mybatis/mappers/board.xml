@@ -44,7 +44,7 @@
 		]]>
 	</select>
 	
-	
+	<!-- controller: value = /search -->
 	<select id="selectList2" parameterType="String" resultType="com.javaex.vo.BoardVo">
 		<![CDATA[
 			select  b.no,
