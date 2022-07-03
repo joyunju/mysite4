@@ -110,12 +110,26 @@ select  b.no,
         b.user_no,
         u.name
 from board b, users u
-where b.user_no = u.no;
+where b.user_no = u.no
+order by no desc;
 
 -- 조건 : 제목 이라는 단어를 타이틀에서 포함하고 있는지
 select *
 from board
 where title like '%제목%';
+
+-- like 문까지
+select  b.no,
+        b.title,
+        b.content,
+        b.hit,
+        b.reg_date,
+        b.user_no,
+        u.name
+from board b, users u
+where b.user_no = u.no
+and title like '%제목%'
+order by no desc;
 
 
 
