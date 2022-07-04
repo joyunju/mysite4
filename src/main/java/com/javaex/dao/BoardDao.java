@@ -14,7 +14,7 @@ public class BoardDao {
 	@Autowired
 	private SqlSession sqlSession;
 
-	//리스트(일반 + 검색)
+	// 리스트(일반 + 검색)
 	public List<BoardVo> selectList3(String keyword) {
 		System.out.println("BoardDao > selectList3()");
 		
