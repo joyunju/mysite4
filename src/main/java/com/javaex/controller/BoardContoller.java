@@ -45,7 +45,7 @@ public class BoardContoller {
 	}
 
 	
-	
+	// list > 검색
 	@RequestMapping(value = "/search", method = { RequestMethod.GET, RequestMethod.POST })
 	public String search(@RequestParam("keyword") String keyword, Model model  ) {
 		System.out.println("BoardContoller > search()");

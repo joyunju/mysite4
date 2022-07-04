@@ -14,7 +14,7 @@ public class BoardService {
 	@Autowired
 	private BoardDao boardDao;
 
-	
+	//리스트(일반 + 검색)
 	public List<BoardVo> getBoardList3(String keyword) {
 		System.out.println("BoardService > getBoardList3()");
 
@@ -34,7 +34,7 @@ public class BoardService {
 		return boardList;
 	}
 	
-	// value = "/search"
+	// list > 검색 : value = "/search"
 	public List<BoardVo> getBoardList2(String keyword){
 		System.out.println("BoardService > getBoardList2()");
 		
