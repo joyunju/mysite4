@@ -56,6 +56,38 @@ public String login(@ModelAttribute UserVo userVo, HttpSession session) {
 
 
 --------------
+>> 07-04 : Mon
+
+# 댓글달기 버튼 --> 글읽기 (read) 페이지 하단에 
+
+# 내일수업
+ㄴ 페이징 ---> 게시판 리스트 필요
+----------------
+# 이번주 실습 
+ㄴ ajax 방명록 ( ajax + json + jquery 기술)
+ㄴ 갤러리 ( 파일첨부 )
+
+ㄴ 계층형 게시판 (알고리즘 연습)
+	# 계층형 게시판
+	: 단계별로 구현할 것 , 고민해볼 것
+	: controller	service		dao 역할 구분
+	
+	
+	# 일반 게시판 코딩 (phonebook4)
+----------------> spring
+
+# 페이징
+# jblog	(java blog) 미니프로젝트
+
+
+
+
+
+
+
+
+
+
 
 
 
