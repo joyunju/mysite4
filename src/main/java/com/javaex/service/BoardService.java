@@ -53,6 +53,12 @@ public class BoardService {
 		return boardList;
 	}
 	
+	// 글쓰기
+	
+	
+	// 글가져오기
+	
+	
 	
 	
 }
