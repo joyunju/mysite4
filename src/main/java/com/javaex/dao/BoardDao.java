@@ -13,6 +13,18 @@ public class BoardDao {
 
 	@Autowired
 	private SqlSession sqlSession;
+	
+	// 리스트(일반)
+	public List<BoardVo> selectList4() {
+		System.out.println("BoardDao > selectList()");
+
+		List<BoardVo> boardList = sqlSession.selectList("board.selectList4");
+		//System.out.println(boardList);
+		return boardList;
+	}
+	
+	
+	
 
 	// 리스트(일반 + 검색)
 	public List<BoardVo> selectList3(String keyword) {

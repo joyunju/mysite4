@@ -18,7 +18,19 @@ public class BoardContoller {
 
 	@Autowired
 	private BoardService boardService;
+	
+	
+	//리스트 ( 일반)
+	// http://localhost:8088/mysite/board/list4
+		@RequestMapping(value = "/list4", method = { RequestMethod.GET, RequestMethod.POST })
+		public String list4(Model model) {
+			System.out.println("BoardContoller > list4()");
 
+			List<BoardVo> boardList = boardService.getBoardList4();
+			model.addAttribute("boardList", boardList);
+			return "board/list4";
+		}
+	
 	//리스트(일반 + 검색)
 	@RequestMapping(value = "/list3", method = { RequestMethod.GET, RequestMethod.POST })
 	public String list3(Model model, 
