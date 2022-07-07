@@ -16,6 +16,7 @@ public class ApiGuestbookController {
 		// 메소드 일반
 
 		// 메인
+		// http://localhost:8088/mysite/api/guestbook/addList
 		@RequestMapping(value = "/api/guestbook/addList", method = { RequestMethod.GET, RequestMethod.POST })
 		public String addList() {
 			System.out.println("ApiGuestbookController > addList");
