@@ -20,6 +20,7 @@ public class ApiGuestbookController {
 		public String addList() {
 			System.out.println("ApiGuestbookController > addList");
 			
+			
 			// 기본 뷰 리졸버 하기 전
 			// return "/WEB-INF/views/apiGuestbook/addList.jsp";
 			return "apiGuestbook/addList";
