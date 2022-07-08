@@ -138,7 +138,34 @@
 	<!-- 준비가 끝나면 -->
 	
 	$(document).ready(function(){
-		console.log("jQuery 로 요청");
+		console.log("jQuery 로 요청 data만 받는 요청");
+	});
+	
+	/*
+	Ajax
+	ㄴ JavaScript를 이용해서 서버에서 데이터를 가져와 페이지 전체의 갱신없이 특정부분만 변경
+	ㄴ 주로 JSON으로 서버와 데이터를 주로 주고 받는다.
+	*/
+	$.ajax({
+		
+		//요청관련
+		url : "${pageContext.request.contextPath }/api/guestbook/list",
+		type : "post",
+		//contentType : "application/json",
+		//data : {name: ”홍길동"},
+		
+		//data 처리
+		dataType : "json",
+		success : function(result){
+
+		/*성공시 처리해야될 코드 작성*/
+
+		},
+		error : function(XHR, status, error) {
+
+		console.error(status + " : " + error);
+
+		}
 	});
 
 
