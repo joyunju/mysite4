@@ -12,7 +12,7 @@
 <link href="${pageContext.request.contextPath }/assets/css/guestbook.css" rel="stylesheet" type="text/css">
 
 <!-- js -->
-<script type="text/javascript" src="${pageContext.request.contextPath }/assets/js/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/assets/js/jquery/jquery-1.12.4.js"></script>
 
 </head>
 
@@ -136,6 +136,7 @@
 <script type="text/javascript">
 
 	<!-- 준비가 끝나면 -->
+	
 	$(document).ready(function(){
 		console.log("jQuery 로 요청");
 	});
