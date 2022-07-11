@@ -35,6 +35,7 @@ public class ApiGuestbookController {
 	@RequestMapping(value = "/api/guestbook/list", method = { RequestMethod.GET, RequestMethod.POST })
 		public String list() {
 		System.out.println("ApiGuestbookController > list()");
+		guestbookService.getGuestList();
 			
 		return "";
 	}
