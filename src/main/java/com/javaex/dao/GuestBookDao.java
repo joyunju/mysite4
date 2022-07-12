@@ -14,10 +14,12 @@ public class GuestBookDao {
 	@Autowired
 	private SqlSession sqlSession;
 	
+	// 전체 리스트 가져오기
 	public List<GuestbookVo> selectList(){
 		System.out.println("GuestBookDao > selectList()");
 		
-		sqlSession.selectList("guestbook.selctList");
+		List<GuestbookVo> guestbookList = sqlSession.selectList("guestbook.selctList");
+		System.out.println("guestbookList");
 		
 		return null;
 	}
