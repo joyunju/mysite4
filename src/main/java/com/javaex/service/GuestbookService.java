@@ -14,6 +14,7 @@ public class GuestbookService {
 	@Autowired
 	private GuestBookDao guestbookDao;
 	
+	// 전체리스트 가져오기
 	public List<GuestbookVo> getGuestList(){
 		System.out.println("GuestbookService > getGuestList()");
 		
