@@ -27,7 +27,6 @@
 </div>
 <!-- //header -->
 
-
 <div id="nav">
 	<ul class="clearfix">
 		<li><a href="">입사지원서</a></li>
